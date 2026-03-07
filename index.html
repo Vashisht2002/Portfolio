@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>BFA Portfolio — Graphic Design & Visual Communication</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a class="nav-logo" href="#hero">K<span>.</span>S</a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about" onclick="closeMenu()">About</a></li>
+    <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+    <li><a href="#portfolio" onclick="closeMenu()">Portfolio</a></li>
+    <li><a href="#resume" onclick="closeMenu()">Resume</a></li>
+    <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-photo-wrap">
+    <div class="hero-photo-frame">
+      <!-- Replace src with your actual photo URL -->
+      <img src="/Screenshot From 2026-03-07 12-45-27.png"
+           alt="Profile Photo" />
+    </div>
+    <div class="hero-photo-deco"></div>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-tag">Available for Projects &amp; Internships</div>
+    <h1 class="hero-name">Komal <em>Sharma</em></h1>
+    <p class="hero-title">BFA Student &nbsp;|&nbsp; Graphic Designer &nbsp;|&nbsp; Visual Storyteller</p>
+    <p class="hero-bio">
+      A design-driven creative pursuing a Bachelor of Fine Arts, blending traditional art
+      foundations with modern digital design. Passionate about crafting visuals that speak
+      before words do — from hand-drawn sketches to polished graphic narratives.
+    </p>
+    <a href="#" class="btn-primary" download>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3"/></svg>
+      Download Resume
+    </a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <p class="section-label">About Me</p>
+      <h2 class="section-title">Design Thinking<br/>Meets Visual Soul</h2>
+      <div class="divider"></div>
+      <p>
+        I believe great design begins long before the screen — in observation, curiosity, and the
+        quiet act of seeing the world differently. As a BFA student specialising in Graphic Design
+        and Visual Communication, I bridge the gap between raw artistic instinct and structured
+        design thinking.
+      </p>
+      <p>
+        My work spans hand-drawn illustration, watercolour, and digital design — each piece driven
+        by a desire to communicate ideas that linger. I find equal joy in the texture of a pencil
+        sketch and the precision of an Illustrator artboard. Every project is a story waiting for
+        the right visual language.
+      </p>
+    </div>
+    <div class="about-stats reveal">
+      <div class="stat-item">
+        <div class="stat-num">3+</div>
+        <div class="stat-label">Years of Practice</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">20+</div>
+        <div class="stat-label">Projects Completed</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">12</div>
+        <div class="stat-label">Core Skills</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">∞</div>
+        <div class="stat-label">Creative Ideas</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <p class="section-label reveal">Expertise</p>
+  <h2 class="section-title reveal">Skills &amp; Craft</h2>
+  <div class="divider reveal"></div>
+  <div class="skills-grid reveal">
+    <div class="skill-item"><div class="skill-dot"></div><span class="skill-name">Sketching</span></div>
+    <div class="skill-item"><div class="skill-dot"></div><span class="skill-name">Portrait Drawing</span></div>
+    <div class="skill-item"><div class="skill-dot"></div><span class="skill-name">Figure Drawing</span></div>
+    <div class="skill-item"><div class="skill-dot"></div><span class="skill-name">Watercolour Painting</span></div>
+    <div class="skill-item"><div class="skill-dot"></div><span class="skill-name">Illustration</span></div>
+    <div class="skill-item"><div class="skill-dot"></div><span class="skill-name">Adobe Photoshop</span></div>
+    <div class="skill-item"><div class="skill-dot"></div><span class="skill-name">Adobe Illustrator</span></div>
+    <div class="skill-item"><div class="skill-dot"></div><span class="skill-name">Digital Illustration</span></div>
+    <div class="skill-item"><div class="skill-dot"></div><span class="skill-name">Graphic Design</span></div>
+    <div class="skill-item"><div class="skill-dot"></div><span class="skill-name">Visual Storytelling</span></div>
+    <div class="skill-item"><div class="skill-dot"></div><span class="skill-name">Composition</span></div>
+    <div class="skill-item"><div class="skill-dot"></div><span class="skill-name">Concept Development</span></div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<!-- PORTFOLIO -->
+<section id="portfolio">
+  <p class="section-label reveal">Selected Work</p>
+  <h2 class="section-title reveal">Portfolio</h2>
+  <div class="divider reveal"></div>
+  <div class="portfolio-grid">
+
+    <!-- Card 1 -->
+    <div class="project-card reveal">
+      <div class="project-img">
+        <img src="./WhatsApp Image 2026-03-07 at 12.08.27 PM.jpeg" alt="boAt Speaker Advertisement" />
+      </div>
+      <div class="project-info">
+        <p class="project-category">Advertisement Design</p>
+        <h3 class="project-title">boAt Speaker Advertisement</h3>
+        <p class="project-desc">A bold, high-contrast advertising poster designed to reflect the energy and premium feel of the boAt audio brand. Merges kinetic typography with vibrant visual rhythm.</p>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="project-card reveal">
+      <div class="project-img">
+        <img src="./WhatsApp Image 2026-03-07 at 12.08.26 PM.jpeg" alt="Samyang Buldak Ramen Poster" />
+      </div>
+      <div class="project-info">
+        <p class="project-category">Brand Poster</p>
+        <h3 class="project-title">Samyang Buldak Ramen Poster</h3>
+        <p class="project-desc">A fiery, visually intense poster capturing the cult-favorite Korean ramen brand's identity — bold colours, playful illustration, and striking compositional energy.</p>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="project-card reveal">
+      <div class="project-img">
+        <img src="./WhatsApp Image 2026-03-07 at 12.07.56 PM.jpeg" alt="Red Fort Tourism Poster" />
+      </div>
+      <div class="project-info">
+        <p class="project-category">Tourism Poster</p>
+        <h3 class="project-title">Red Fort Tourism Poster</h3>
+        <p class="project-desc">A travel-campaign poster celebrating the grandeur of Delhi's Red Fort, blending architectural illustration with warm heritage tones to evoke timeless cultural pride.</p>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="project-card reveal">
+      <div class="project-img">
+        <img src="./WhatsApp Image 2026-03-07 at 12.07.48 PM.jpeg" alt="Blinkit Concept Advertisement" />
+      </div>
+      <div class="project-info">
+        <p class="project-category">Concept Advertisement</p>
+        <h3 class="project-title">Blinkit Concept Advertisement</h3>
+        <p class="project-desc">A student concept ad for Blinkit's rapid-delivery identity — playing with speed, urgency, and everyday convenience through punchy visuals and minimal copy.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- RESUME -->
+<section id="resume">
+  <p class="section-label reveal">Career</p>
+  <h2 class="section-title reveal">My Resume</h2>
+  <div class="divider"></div>
+  <p class="reveal">A comprehensive overview of my education, skills, design projects, and artistic achievements — available for download in PDF format.</p>
+  <a href="./Komal_Sharma_Resume.pdf" class="btn-outline reveal" download>
+    <svg xmlns="" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3"/></svg>
+    Download My Resume (PDF)
+  </a>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-grid">
+    <div class="contact-intro reveal">
+      <p class="section-label">Get in Touch</p>
+      <h2 class="section-title">Let's Create<br/>Together</h2>
+      <div class="divider"></div>
+      <p>Whether you have a project in mind, a collaboration to explore, or simply want to connect — I'd love to hear from you. Design is best when it starts with a conversation.</p>
+      <p>Currently open to internship opportunities, freelance projects, and creative collaborations.</p>
+    </div>
+    <div class="contact-links reveal">
+      <a href="mailto:komalsharma0323@gmail.com" class="contact-link-item">
+        <div class="contact-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        </div>
+        <div>
+          <div class="contact-link-label">Email</div>
+          <div class="contact-link-val">komalsharma0323@gmail.com</div>
+        </div>
+      </a>
+      
+      <a href="https://www.linkedin.com/in/komal-sharma-8466b23b5/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="contact-link-item">
+        <div class="contact-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12" stroke-width="1.5"/><circle cx="4" cy="4" r="2" stroke-width="1.5"/></svg>
+        </div>
+        <div>
+          <div class="contact-link-label">LinkedIn</div>
+          <div class="contact-link-val">linkedin.com/in/komalsharma</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">A<span>.</span>K</div>
+  <p>© 2025 Komal Sharma &nbsp;·&nbsp; BFA Graphic Design</p>
+  <p>Crafted with intention &amp; ink.</p>
+</footer>
+<script src="script.js"></script>
+</body>
