@@ -28,13 +28,10 @@
 <section id="hero">
   <div class="hero-photo-wrap">
     <div class="hero-photo-frame">
-      <!-- Replace src with your actual photo URL -->
-      <img src="Screenshot From 2026-03-07 12-45-27.png"
-           alt="Profile Photo" />
+      <img src="/Screenshot From 2026-03-07 12-45-27.png" alt="Profile Photo" />
     </div>
     <div class="hero-photo-deco"></div>
   </div>
-
   <div class="hero-content">
     <div class="hero-tag">Available for Projects &amp; Internships</div>
     <h1 class="hero-name">Komal <em>Sharma</em></h1>
@@ -114,62 +111,241 @@
 </section>
 
 <!-- PORTFOLIO -->
-<!-- PORTFOLIO -->
 <section id="portfolio">
-  <p class="section-label reveal">Selected Work</p>
-  <h2 class="section-title reveal">Portfolio</h2>
-  <div class="divider reveal"></div>
-  <div class="portfolio-grid">
 
-    <!-- Card 1 -->
-    <div class="project-card reveal">
-      <div class="project-img">
-        <img src="./WhatsApp Image 2026-03-07 at 12.08.27 PM.jpeg" alt="boAt Speaker Advertisement" />
-      </div>
-      <div class="project-info">
-        <p class="project-category">Advertisement Design</p>
-        <h3 class="project-title">boAt Speaker Advertisement</h3>
-        <p class="project-desc">A bold, high-contrast advertising poster designed to reflect the energy and premium feel of the boAt audio brand. Merges kinetic typography with vibrant visual rhythm.</p>
-      </div>
-    </div>
-
-    <!-- Card 2 -->
-    <div class="project-card reveal">
-      <div class="project-img">
-        <img src="./WhatsApp Image 2026-03-07 at 12.08.26 PM.jpeg" alt="Samyang Buldak Ramen Poster" />
-      </div>
-      <div class="project-info">
-        <p class="project-category">Brand Poster</p>
-        <h3 class="project-title">Samyang Buldak Ramen Poster</h3>
-        <p class="project-desc">A fiery, visually intense poster capturing the cult-favorite Korean ramen brand's identity — bold colours, playful illustration, and striking compositional energy.</p>
-      </div>
-    </div>
-
-    <!-- Card 3 -->
-    <div class="project-card reveal">
-      <div class="project-img">
-        <img src="./WhatsApp Image 2026-03-07 at 12.07.56 PM.jpeg" alt="Red Fort Tourism Poster" />
-      </div>
-      <div class="project-info">
-        <p class="project-category">Tourism Poster</p>
-        <h3 class="project-title">Red Fort Tourism Poster</h3>
-        <p class="project-desc">A travel-campaign poster celebrating the grandeur of Delhi's Red Fort, blending architectural illustration with warm heritage tones to evoke timeless cultural pride.</p>
-      </div>
-    </div>
-
-    <!-- Card 4 -->
-    <div class="project-card reveal">
-      <div class="project-img">
-        <img src="./WhatsApp Image 2026-03-07 at 12.07.48 PM.jpeg" alt="Blinkit Concept Advertisement" />
-      </div>
-      <div class="project-info">
-        <p class="project-category">Concept Advertisement</p>
-        <h3 class="project-title">Blinkit Concept Advertisement</h3>
-        <p class="project-desc">A student concept ad for Blinkit's rapid-delivery identity — playing with speed, urgency, and everyday convenience through punchy visuals and minimal copy.</p>
-      </div>
-    </div>
-
+  <div class="port-header">
+    <p class="section-label reveal">Selected Work</p>
+    <h2 class="section-title reveal">Portfolio</h2>
+    <div class="divider reveal"></div>
+    <p class="port-subtitle reveal">A curated collection of graphic design, brand communication, and editorial work.</p>
   </div>
+
+  <!-- FILTER TABS -->
+  <div class="port-filters reveal">
+    <button class="port-filter active" data-filter="all">All Work</button>
+    <button class="port-filter" data-filter="advertising">Advertising</button>
+    <button class="port-filter" data-filter="editorial">Editorial</button>
+    <button class="port-filter" data-filter="poster">Poster</button>
+  </div>
+
+  <!-- BENTO GRID — 9 cards -->
+  <div class="port-bento">
+
+    <!-- Card 1 — boAt (tall, spans 2 rows) -->
+    <div class="port-item reveal" data-category="advertising">
+      <div class="port-img-wrap">
+        <img src="./WhatsApp Image 2026-03-07 at 12.08.27 PM.jpeg" alt="boAt Speaker Advertisement" />
+        <div class="port-overlay">
+          <span class="port-tag">Advertisement Design</span>
+          <h3 class="port-name">boAt Speaker<br/>Advertisement</h3>
+          <p class="port-blurb">Bold, high-contrast poster merging kinetic typography with vibrant visual rhythm for the boAt audio brand.</p>
+        </div>
+      </div>
+      <div class="port-meta">
+        <div><p class="port-cat">Advertisement Design</p><h3 class="port-title">boAt Speaker Advertisement</h3></div>
+        <span class="port-num">01</span>
+      </div>
+    </div>
+
+    <!-- Card 2 — Samyang (wide) -->
+    <div class="port-item reveal" data-category="poster">
+      <div class="port-img-wrap">
+        <img src="./WhatsApp Image 2026-03-07 at 12.08.26 PM.jpeg" alt="Samyang Buldak Ramen Poster" />
+        <div class="port-overlay">
+          <span class="port-tag">Brand Poster</span>
+          <h3 class="port-name">Samyang Buldak<br/>Ramen Poster</h3>
+          <p class="port-blurb">Fiery, visually intense poster capturing the cult-favorite Korean ramen brand's bold identity.</p>
+        </div>
+      </div>
+      <div class="port-meta">
+        <div><p class="port-cat">Brand Poster</p><h3 class="port-title">Samyang Buldak Ramen Poster</h3></div>
+        <span class="port-num">02</span>
+      </div>
+    </div>
+
+    <!-- Card 3 — Red Fort -->
+    <div class="port-item reveal" data-category="poster">
+      <div class="port-img-wrap">
+        <img src="./WhatsApp Image 2026-03-07 at 12.07.56 PM.jpeg" alt="Red Fort Tourism Poster" />
+        <div class="port-overlay">
+          <span class="port-tag">Tourism Poster</span>
+          <h3 class="port-name">Red Fort<br/>Tourism Poster</h3>
+          <p class="port-blurb">Heritage travel-campaign poster blending architectural illustration with warm cultural tones.</p>
+        </div>
+      </div>
+      <div class="port-meta">
+        <div><p class="port-cat">Tourism Poster</p><h3 class="port-title">Red Fort Tourism Poster</h3></div>
+        <span class="port-num">03</span>
+      </div>
+    </div>
+
+    <!-- Card 4 — Blinkit -->
+    <div class="port-item reveal" data-category="advertising">
+      <div class="port-img-wrap">
+        <img src="./WhatsApp Image 2026-03-07 at 12.07.48 PM.jpeg" alt="Blinkit Concept Advertisement" />
+        <div class="port-overlay">
+          <span class="port-tag">Concept Advertisement</span>
+          <h3 class="port-name">Blinkit Concept<br/>Advertisement</h3>
+          <p class="port-blurb">Student concept ad playing with speed, urgency, and everyday convenience through punchy visuals.</p>
+        </div>
+      </div>
+      <div class="port-meta">
+        <div><p class="port-cat">Concept Advertisement</p><h3 class="port-title">Blinkit Concept Advertisement</h3></div>
+        <span class="port-num">04</span>
+      </div>
+    </div>
+
+    <!-- Card 5 — BTS -->
+    <div class="port-item reveal" data-category="poster">
+      <div class="port-img-wrap">
+        <img src="./bts.jpeg" alt="BTS World Tour Poster" />
+        <div class="port-overlay">
+          <span class="port-tag">Event Poster</span>
+          <h3 class="port-name">BTS World Tour<br/>Proof Poster</h3>
+          <p class="port-blurb">Dramatic concert poster for BTS Proof World Tour — minimal, bold, and atmospheric.</p>
+        </div>
+      </div>
+      <div class="port-meta">
+        <div><p class="port-cat">Event Poster</p><h3 class="port-title">BTS World Tour Poster</h3></div>
+        <span class="port-num">05</span>
+      </div>
+    </div>
+
+    <!-- Card 6 — Burger King -->
+    <div class="port-item reveal" data-category="advertising">
+      <div class="port-img-wrap">
+        <img src="./burgerking.jpeg" alt="Burger King Advertisement" />
+        <div class="port-overlay">
+          <span class="port-tag">Advertisement Design</span>
+          <h3 class="port-name">Burger King<br/>Advertisement</h3>
+          <p class="port-blurb">Vibrant fast-food ad with retro typography and appetite-driven visual composition.</p>
+        </div>
+      </div>
+      <div class="port-meta">
+        <div><p class="port-cat">Advertisement Design</p><h3 class="port-title">Burger King Advertisement</h3></div>
+        <span class="port-num">06</span>
+      </div>
+    </div>
+
+    <!-- Card 7 — Iodex / Neeraj -->
+    <div class="port-item reveal" data-category="advertising">
+      <div class="port-img-wrap">
+        <img src="./neeraj.jpeg" alt="Iodex Haleon Advertisement" />
+        <div class="port-overlay">
+          <span class="port-tag">Advertisement Design</span>
+          <h3 class="port-name">Iodex Haleon<br/>Advertisement</h3>
+          <p class="port-blurb">High-energy sports ad featuring Neeraj Chopra — bold copy with purposeful product placement.</p>
+        </div>
+      </div>
+      <div class="port-meta">
+        <div><p class="port-cat">Advertisement Design</p><h3 class="port-title">Iodex Haleon Advertisement</h3></div>
+        <span class="port-num">07</span>
+      </div>
+    </div>
+
+    <!-- Card 8 — Skechers -->
+    <div class="port-item reveal" data-category="advertising">
+      <div class="port-img-wrap">
+        <img src="./shoes.jpeg" alt="Skechers Advertisement" />
+        <div class="port-overlay">
+          <span class="port-tag">Product Advertisement</span>
+          <h3 class="port-name">Skechers<br/>Advertisement</h3>
+          <p class="port-blurb">Sleek product poster with dynamic layout, sharp typography, and strong brand presence.</p>
+        </div>
+      </div>
+      <div class="port-meta">
+        <div><p class="port-cat">Product Advertisement</p><h3 class="port-title">Skechers Advertisement</h3></div>
+        <span class="port-num">08</span>
+      </div>
+    </div>
+
+    <!-- Card 9 — Vogue (tall, spans 2 rows) -->
+    <div class="port-item reveal" data-category="editorial">
+      <div class="port-img-wrap">
+        <img src="./vogue.jpeg" alt="Vogue Magazine Cover Design" />
+        <div class="port-overlay">
+          <span class="port-tag">Magazine Cover</span>
+          <h3 class="port-name">Vogue Cover<br/>Design</h3>
+          <p class="port-blurb">Editorial magazine cover concept — luxury typography, cinematic composition, high-fashion identity.</p>
+        </div>
+      </div>
+      <div class="port-meta">
+        <div><p class="port-cat">Magazine Cover</p><h3 class="port-title">Vogue Cover Design</h3></div>
+        <span class="port-num">09</span>
+      </div>
+    </div>
+
+  </div><!-- /port-bento -->
+
+  <!-- MAGAZINE FEATURE -->
+  <div class="mag-feature reveal" data-category="editorial">
+
+    <div class="mag-feature-label">
+      <span class="section-label">Editorial Design</span>
+      <div class="mag-feature-line"></div>
+    </div>
+
+    <div class="mag-feature-inner">
+
+      <!-- LEFT — info panel -->
+      <div class="mag-info">
+        <span class="mag-issue-tag">Issue No. 01 &nbsp;·&nbsp; 2024</span>
+        <h2 class="mag-feature-title">Music &amp;<br/><em>Culture</em><br/>Magazine</h2>
+        <div class="divider"></div>
+        <p class="mag-feature-desc">
+          A 14-page editorial magazine exploring the intersection of music, identity, and culture.
+          From Billie Eilish to Arijit Singh — each spread crafted with typographic intention
+          and visual storytelling.
+        </p>
+        <ul class="mag-contents">
+          <li><span>01</span>Billie Eilish: Sound of a Generation</li>
+          <li><span>02</span>Arijit Singh: Voice That Touches Hearts</li>
+          <li><span>03</span>Jeon Jungkook: Golden Maknae of BTS</li>
+          <li><span>04</span>Top 10 Songs of 2024</li>
+          <li><span>05</span>Music-Inspired Fashion Trends</li>
+          <li><span>06</span>Playlist of the Month</li>
+          <li><span>07</span>Lyrics That Changed the World</li>
+        </ul>
+        <div class="mag-nav-controls">
+          <button class="mag-btn" id="magPrev" disabled>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 12H5M5 12l7-7M5 12l7 7"/></svg>
+          </button>
+          <span class="mag-counter" id="magCounter">Cover</span>
+          <button class="mag-btn" id="magNext">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M14 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+        <p class="mag-swipe-hint">Click arrows · Swipe · Or tap the magazine to flip</p>
+      </div>
+
+      <!-- RIGHT — flipbook -->
+      <div class="mag-viewer-wrap">
+        <div class="mag-scene">
+          <div class="mag-book" id="magBook">
+            <div class="mag-spine-shadow"></div>
+            <div class="mag-page" data-index="0"><img src="./start.jpeg"  alt="Cover"   draggable="false"/></div>
+            <div class="mag-page" data-index="1"><img src="./1.jpeg"      alt="Page 2"  draggable="false"/></div>
+            <div class="mag-page" data-index="2"><img src="./2.jpeg"      alt="Page 3"  draggable="false"/></div>
+            <div class="mag-page" data-index="3"><img src="./3.jpeg"      alt="Page 4"  draggable="false"/></div>
+            <div class="mag-page" data-index="4"><img src="./4.jpeg"      alt="Page 5"  draggable="false"/></div>
+            <div class="mag-page" data-index="5"><img src="./5.jpeg"      alt="Page 6"  draggable="false"/></div>
+            <div class="mag-page" data-index="6"><img src="./6.jpeg"      alt="Page 7"  draggable="false"/></div>
+            <div class="mag-page" data-index="7"><img src="./7.jpeg"      alt="Page 8"  draggable="false"/></div>
+            <div class="mag-page" data-index="8"><img src="./8.jpeg"      alt="Page 9"  draggable="false"/></div>
+            <div class="mag-page" data-index="9"><img src="./9.jpeg"      alt="Page 10" draggable="false"/></div>
+            <div class="mag-page" data-index="10"><img src="./10.jpeg"    alt="Page 11" draggable="false"/></div>
+            <div class="mag-page" data-index="11"><img src="./11.jpeg"    alt="Page 12" draggable="false"/></div>
+            <div class="mag-page" data-index="12"><img src="./12.jpeg"    alt="Page 13" draggable="false"/></div>
+            <div class="mag-page" data-index="13"><img src="./last.jpeg"  alt="Page 14" draggable="false"/></div>
+          </div>
+          <div class="mag-table-shadow"></div>
+        </div>
+        <div class="mag-progress" id="magProgress"></div>
+      </div>
+
+    </div><!-- /mag-feature-inner -->
+  </div><!-- /mag-feature -->
+
 </section>
 
 <!-- RESUME -->
@@ -204,7 +380,6 @@
           <div class="contact-link-val">komalsharma0323@gmail.com</div>
         </div>
       </a>
-      
       <a href="https://www.linkedin.com/in/komal-sharma-8466b23b5/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="contact-link-item">
         <div class="contact-icon">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12" stroke-width="1.5"/><circle cx="4" cy="4" r="2" stroke-width="1.5"/></svg>
@@ -220,9 +395,11 @@
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-logo">A<span>.</span>K</div>
+  <div class="footer-logo">K<span>.</span>S</div>
   <p>© 2025 Komal Sharma &nbsp;·&nbsp; BFA Graphic Design</p>
   <p>Crafted with intention &amp; ink.</p>
 </footer>
+
 <script src="script.js"></script>
 </body>
+</html>
