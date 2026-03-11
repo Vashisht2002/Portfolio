@@ -28,7 +28,7 @@
 <section id="hero">
   <div class="hero-photo-wrap">
     <div class="hero-photo-frame">
-      <img src="Screenshot From 2026-03-07 12-45-27.png" alt="Profile Photo" />
+      <img src="/Screenshot From 2026-03-07 12-45-27.png" alt="Profile Photo" />
     </div>
     <div class="hero-photo-deco"></div>
   </div>
@@ -128,11 +128,12 @@
     <button class="port-filter" data-filter="poster">Poster</button>
   </div>
 
-  <!-- BENTO GRID — 9 cards -->
-  <div class="port-bento">
+  <!-- HORIZONTAL SCROLL CAROUSEL -->
+  <div class="port-carousel-wrap">
+    <div class="port-carousel-track" id="portTrack">
 
-    <!-- Card 1 — boAt (tall, spans 2 rows) -->
-    <div class="port-item reveal" data-category="advertising">
+    <!-- Card 1 — boAt -->
+    <div class="port-item" data-category="advertising">
       <div class="port-img-wrap">
         <img src="./WhatsApp Image 2026-03-07 at 12.08.27 PM.jpeg" alt="boAt Speaker Advertisement" />
         <div class="port-overlay">
@@ -148,7 +149,7 @@
     </div>
 
     <!-- Card 2 — Samyang (wide) -->
-    <div class="port-item reveal" data-category="poster">
+    <div class="port-item" data-category="poster">
       <div class="port-img-wrap">
         <img src="./WhatsApp Image 2026-03-07 at 12.08.26 PM.jpeg" alt="Samyang Buldak Ramen Poster" />
         <div class="port-overlay">
@@ -164,7 +165,7 @@
     </div>
 
     <!-- Card 3 — Red Fort -->
-    <div class="port-item reveal" data-category="poster">
+    <div class="port-item" data-category="poster">
       <div class="port-img-wrap">
         <img src="./WhatsApp Image 2026-03-07 at 12.07.56 PM.jpeg" alt="Red Fort Tourism Poster" />
         <div class="port-overlay">
@@ -180,7 +181,7 @@
     </div>
 
     <!-- Card 4 — Blinkit -->
-    <div class="port-item reveal" data-category="advertising">
+    <div class="port-item" data-category="advertising">
       <div class="port-img-wrap">
         <img src="./WhatsApp Image 2026-03-07 at 12.07.48 PM.jpeg" alt="Blinkit Concept Advertisement" />
         <div class="port-overlay">
@@ -196,7 +197,7 @@
     </div>
 
     <!-- Card 5 — BTS -->
-    <div class="port-item reveal" data-category="poster">
+    <div class="port-item" data-category="poster">
       <div class="port-img-wrap">
         <img src="./bts.jpeg" alt="BTS World Tour Poster" />
         <div class="port-overlay">
@@ -212,7 +213,7 @@
     </div>
 
     <!-- Card 6 — Burger King -->
-    <div class="port-item reveal" data-category="advertising">
+    <div class="port-item" data-category="advertising">
       <div class="port-img-wrap">
         <img src="./burgerking.jpeg" alt="Burger King Advertisement" />
         <div class="port-overlay">
@@ -228,7 +229,7 @@
     </div>
 
     <!-- Card 7 — Iodex / Neeraj -->
-    <div class="port-item reveal" data-category="advertising">
+    <div class="port-item" data-category="advertising">
       <div class="port-img-wrap">
         <img src="./neeraj.jpeg" alt="Iodex Haleon Advertisement" />
         <div class="port-overlay">
@@ -244,7 +245,7 @@
     </div>
 
     <!-- Card 8 — Skechers -->
-    <div class="port-item reveal" data-category="advertising">
+    <div class="port-item" data-category="advertising">
       <div class="port-img-wrap">
         <img src="./shoes.jpeg" alt="Skechers Advertisement" />
         <div class="port-overlay">
@@ -259,8 +260,8 @@
       </div>
     </div>
 
-    <!-- Card 9 — Vogue (tall, spans 2 rows) -->
-    <div class="port-item reveal" data-category="editorial">
+    <!-- Card 9 — Vogue -->
+    <div class="port-item" data-category="editorial">
       <div class="port-img-wrap">
         <img src="./vogue.jpeg" alt="Vogue Magazine Cover Design" />
         <div class="port-overlay">
@@ -275,7 +276,8 @@
       </div>
     </div>
 
-  </div><!-- /port-bento -->
+    </div><!-- /port-carousel-track -->
+  </div><!-- /port-carousel-wrap -->
 
   <!-- MAGAZINE FEATURE -->
   <div class="mag-feature reveal" data-category="editorial">
@@ -396,8 +398,7 @@
 <!-- FOOTER -->
 <footer>
   <div class="footer-logo">K<span>.</span>S</div>
-  <p>© 2025 Komal Sharma &nbsp;·&nbsp; BFA Graphic Design</p>
-  <p>Crafted with intention &amp; ink.</p>
+  <p>© 2025 Komal Sharma. Designed with passion.</p>
 </footer>
 
 <script src="script.js"></script>
